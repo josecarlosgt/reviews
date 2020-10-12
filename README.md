@@ -1,2 +1,2 @@
 # reviews
-Sample for implementing a reviews application using cloud firestore
+Sample code for implementing a reviews application using cloud firestore
