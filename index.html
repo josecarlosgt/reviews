@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>		
+		<script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>		
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div>
+			<h1>JavaScript: The Definitive Guide: Master the World's Most-Used Programming Language</h1>
+			<main>
+				JavaScript is the programming language of the web and is used by more software developers today than any other programming language.
+				For nearly 25 years this best seller has been the go-to guide for JavaScript programmers.
+				The seventh edition is fully updated to cover the 2020 version of JavaScript, and new chapters cover classes, modules, iterators, generators, Promises, async/await, and metaprogramming.
+				You’ll find illuminating and engaging example code throughout.
+			</main>
+			<section>
+				<h2>Reviews</h2>
+				<ul id="reviews">
+					<!-- SAMPLE REVIEW WITH RATING TWO:
+					<li>REVIEW TEXT
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star checked"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+						<span class="fa fa-star"></span>
+					</li>
+					-->
+				</ul>
+				<h2>Add a Review</h2>
+				<form id="add-review-form">
+					<input type="reviewText" name="review" id="reviewText" placeholder="Review text">
+					<select name="reviewStars" id="reviewStars">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>						
+						<option value="5">5</option>						
+					</select>
+					<button>Add Review</button>
+            </form>
+			</section>
+		</div>
+		<script>
+		  // Your web app's Firebase configuration
+		  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		  var firebaseConfig = {
+			apiKey: "AIzaSyDRseu9MymiERirRoLdlJZoW_tGNDCmWbY",
+			authDomain: "trying-firebase-1a9fe.firebaseapp.com",
+			databaseURL: "https://trying-firebase-1a9fe.firebaseio.com",
+			projectId: "trying-firebase-1a9fe",
+			storageBucket: "trying-firebase-1a9fe.appspot.com",
+			messagingSenderId: "532179037337",
+			appId: "1:532179037337:web:5e92efa986c1e61d765c08",
+			measurementId: "G-WXP7QH9B9L"
+		  };
+		  // Initialize Firebase
+		  firebase.initializeApp(firebaseConfig);
+		  const db = firebase.firestore();
+		  // Check if firestore has been created successfully
+		  console.log(db);
+		</script>
+		<script src="app.js"></script>		
+	</body>
+</html>

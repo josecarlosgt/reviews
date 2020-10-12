@@ -1,0 +1,20 @@
+div {
+	margin: auto;
+	width: 50%;	
+}
+ul {
+	border: 1px solid black;
+}
+li {
+	padding: 10px;	
+	/* cursor: pointer; */
+}
+.checked {
+  color: orange;
+}
+.fa {
+	padding-right: 2px;
+}
+input {
+	width: 500px;
+}
